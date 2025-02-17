@@ -5,7 +5,7 @@ export function middleware(req: NextRequest) {
   const response = NextResponse.next();
 
   // Allow CORS for all origins - adjust for production
-  response.headers.set('Access-Control-Allow-Origin', 'https://www.landsonagri.in/');
+  response.headers.set('Access-Control-Allow-Origin', '*');
   response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
